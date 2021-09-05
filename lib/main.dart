@@ -67,7 +67,7 @@ class Login extends State<LoginPage> {
                     RichText(
                       text: TextSpan(children: <TextSpan>[
                         TextSpan(
-                            text: 'Forgot Password?',
+                            text: 'Forgot Password ?',
                             style: new TextStyle(
                               color: Colors.red,
                               fontSize: 22,
