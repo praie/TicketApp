@@ -26,6 +26,9 @@ class Forgot extends State<ForgotPassword> {
         centerTitle: true,
       ),
       body: Container(
+        decoration: BoxDecoration(
+            gradient:
+                LinearGradient(colors: [Colors.white70, Colors.redAccent])),
         padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
         child: Form(
           child: Column(

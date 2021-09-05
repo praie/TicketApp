@@ -19,6 +19,9 @@ class _RegisterState extends State<Register> {
         centerTitle: true,
       ),
       body: Container(
+        decoration: BoxDecoration(
+            gradient:
+                LinearGradient(colors: [Colors.white70, Colors.redAccent])),
         padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
         child: Form(
           child: Column(

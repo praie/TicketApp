@@ -10,15 +10,12 @@ class CreateTicket extends StatefulWidget {
 
 class Create extends State<CreateTicket> {
   showAlertDialog(BuildContext context) {
-    // set up the button
     Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () {
         Navigator.pop(context);
       },
     );
-
-    // set up the AlertDialog
     AlertDialog alert = AlertDialog(
       title: Text("SAVED ! "),
       content: Text("Ticket Settings Saved."),
@@ -26,8 +23,6 @@ class Create extends State<CreateTicket> {
         okButton,
       ],
     );
-
-    // show the dialog
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -37,7 +32,6 @@ class Create extends State<CreateTicket> {
   }
 
   showEmptyAlertDialog(BuildContext context) {
-    // set up the button
     Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () {
@@ -45,7 +39,6 @@ class Create extends State<CreateTicket> {
       },
     );
 
-    // set up the AlertDialog
     AlertDialog alert = AlertDialog(
       title: Text("Field Empty ! "),
       content: Text("PLEASE Fill ALL The Fields"),
@@ -53,8 +46,6 @@ class Create extends State<CreateTicket> {
         okButton,
       ],
     );
-
-    // show the dialog
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -75,6 +66,9 @@ class Create extends State<CreateTicket> {
       body: ListView(
         children: <Widget>[
           Container(
+            decoration: BoxDecoration(
+                gradient:
+                    LinearGradient(colors: [Colors.white70, Colors.redAccent])),
             padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
             child: Form(
               child: Column(
